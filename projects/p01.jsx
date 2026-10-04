@@ -9,6 +9,7 @@ const P01_L = (es, en) => (document.documentElement.lang === 'es' ? es : en);
 const P01_TERMINAL_SCRIPT = [
   { t: 0.3, kind: 'caption', text: '01 / Estado del repositorio (main)' },
   { t: 0.6, kind: 'cmd', text: 'git log --oneline' },
+  { t: 1.35, kind: 'out', text: '66b4cc5 feat: línea de comandos, demo con la estética del portafolio y corrección del pendiente de Neo4j en RESULTS.md' },
   { t: 1.5, kind: 'out', text: '9e26b20 docs: README con resultados, origen de datos y límites; Makefile, tareas.py, Docker y export Cypher' },
   { t: 1.65, kind: 'out', text: '953a323 feat(app): demo local sin credenciales y versión estática' },
   { t: 1.8, kind: 'out', text: 'f9962cd feat(eval): banco de 100 preguntas, 20 paráfrasis, lista manual de aislamientos y RAG plano como línea base' },
