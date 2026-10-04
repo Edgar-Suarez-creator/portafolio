@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#eef2f0" />
+<title>P1 · Asistente de planta sobre grafo de conocimiento · Edgar Suárez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" /><link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" /><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="_styles.css?v=1791060632" />
+</head>
+<body>
+<div class="bg-stage"></div>
+<div class="bg-grid"></div>
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="../index.html"><i></i>Portafolio</a>
+    <div class="nav-links">
+      <a href="../index.html#about"><span class="l-es">Sobre mí</span><span class="l-en">About me</span></a>
+      <a href="../index.html#stack"><span class="l-es">Herramientas</span><span class="l-en">Tools</span></a>
+      <div class="nav-dd"><a href="../index.html#projects" class="dd-trigger active"><span class="l-es">Proyectos</span><span class="l-en">Projects</span> <i class="dd-caret"></i></a><div class="dd-menu"><a href="01-asistente-planta.html" class="active"><span class="dd-num">P1</span><span class="l-es">Asistente de planta</span><span class="l-en">Plant assistant</span></a><a class="dd-off" aria-disabled="true"><span class="dd-num">P2</span><span class="l-es">Digitalización de P&amp;ID</span><span class="l-en">P&amp;ID digitization</span></a><a class="dd-off" aria-disabled="true"><span class="dd-num">P3</span><span class="l-es">Planeación de órdenes y backlog</span><span class="l-en">Work-order planning and backlog</span></a><a class="dd-off" aria-disabled="true"><span class="dd-num">P4</span><span class="l-es">Estrategia de confiabilidad</span><span class="l-en">Reliability strategy</span></a><a class="dd-off" aria-disabled="true"><span class="dd-num">P5</span><span class="l-es">Materiales y repuestos</span><span class="l-en">Materials and spares</span></a><a class="dd-off" aria-disabled="true"><span class="dd-num">P6</span><span class="l-es">Construcción y entrega por sistemas</span><span class="l-en">Construction and handover by system</span></a><a class="dd-off" aria-disabled="true"><span class="dd-num">P7</span><span class="l-es">Calidad en construcción</span><span class="l-en">Construction quality</span></a><a class="dd-off" aria-disabled="true"><span class="dd-num">P8</span><span class="l-es">Preservación de equipos</span><span class="l-en">Equipment preservation</span></a></div></div>
+      <a href="../index.html#metodologia"><span class="l-es">Metodología</span><span class="l-en">Methodology</span></a>
+      <a href="../index.html#experiencia"><span class="l-es">Experiencia</span><span class="l-en">Experience</span></a>
+    </div>
+    <div class="lang" id="lang"><button data-lang="es" class="on" type="button">ES</button><button data-lang="en" type="button">EN</button></div>
+    <a class="btn btn-teal nav-cta" href="../index.html#contact"><span class="l-es">Contacto →</span><span class="l-en">Contact →</span></a>
+  </div>
+</nav>
+<div class="container"><div class="crumbs-bar"><div class="crumbs">
+      <a href="../index.html"><span class="l-es">← Portafolio</span><span class="l-en">← Portfolio</span></a>
+      <span class="sep">/</span>
+      <span class="here">P1 · <span class="l-es">Asistente de planta</span><span class="l-en">Plant assistant</span></span>
+    </div><div class="nav-status">
+    </div></div></div>
+<header class="hero3">
+  <div class="hero3-bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="grid"></i></div>
+  <div class="container hero3-in">
+    <div class="hero3-l">
+      <div class="hero3-eyebrow"><span class="dot"></span>P1 · <span class="l-es">Serie planta · reporte de falla → solicitud</span><span class="l-en">Plant series · fault report → request</span></div>
+      <h1><span class="l-es">Asistente de planta sobre grafo de conocimiento</span><span class="l-en">Plant assistant on a knowledge graph</span></h1>
+      <p class="one"><span class="l-es">Recibe un reporte de falla en lenguaje natural, identifica el equipo por su tag y devuelve su ficha, su historial, las fallas parecidas en equipos de la misma clase y el borrador de la solicitud de entrega a operaciones, con las válvulas que hay que cerrar calculadas sobre la topología de la planta. El ingeniero aprueba antes de emitir.</span><span class="l-en">It takes a fault report in natural language, identifies the equipment by its tag and returns its datasheet, its history, similar failures on equipment of the same class and the draft handover request to operations, with the valves to close computed over the plant topology. The engineer approves before it is issued.</span></p>
+      <div class="hero3-cta">
+        <a class="btn3 primary" href="#demo"><span class="l-es">Ver la demo</span><span class="l-en">Watch the demo</span> <span>↓</span></a>
+        <a class="btn3 ghost" href="https://github.com/Edgar-Suarez-creator/p1-asistente-planta" target="_blank" rel="noopener"><span class="l-es">Código en GitHub</span><span class="l-en">Code on GitHub</span> <span>↗</span></a>
+      </div>
+      <div class="chips"><span class="chip">grafo en memoria · Neo4j</span><span class="chip">ISO 14224 como nodos</span><span class="chip">4 herramientas deterministas</span><span class="chip">aprobación registrada</span></div>
+    </div>
+    <div class="hero3-r">
+      <div class="kpi3">
+        <div class="kpi3-top">
+          <svg class="gauge" viewBox="0 0 180 180" aria-hidden="true">
+            <defs><linearGradient id="gg01" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00a884"/><stop offset="1" stop-color="#00a884"/></linearGradient></defs>
+            <circle cx="90" cy="90" r="70" class="track"/>
+            <circle cx="90" cy="90" r="54" class="track2"/><circle cx="90" cy="90" r="54" class="base" style="--dash:339.3;--off:285.0"/>
+            <circle cx="90" cy="90" r="70" class="goal" stroke="url(#gg01)" style="--dash:439.8;--off:0.0"/>
+          </svg>
+          <div class="gauge-c"><b>1.00</b><small><span class="l-es">de 1</span><span class="l-en">of 1</span></small></div>
+        </div>
+        <div class="kpi3-k"><span class="l-es">Preguntas sobre la planta respondidas</span><span class="l-en">Plant questions answered</span></div>
+        <div class="kpi3-cmp">
+          <div><span class="sw base"></span><span class="l-es">RAG plano · cota</span><span class="l-en">flat RAG · bound</span><b>0.16</b></div>
+          <div><span class="sw goal"></span><span class="l-es">grafo</span><span class="l-en">graph</span><b>1.00</b></div>
+        </div>
+        <p class="expl"><span class="l-es">Cien preguntas sobre la planta: qué equipo es un tag, qué válvulas lo aíslan, cuántas veces falló por un modo, qué datos le faltan. El grafo responde las cien; un RAG plano sobre los mismos documentos, en el mejor caso, 16. Con redacción libre, fuera de sus plantillas, el grafo baja a 0,10: es lo que queda por cerrar con el modelo de lenguaje.</span><span class="l-en">One hundred questions about the plant: which equipment a tag is, which valves isolate it, how many times it failed by a mode, which data it is missing. The graph answers all hundred; a flat RAG over the same documents, at best, 16. With free wording, outside its templates, the graph drops to 0.10: that is what remains to be closed with the language model.</span></p>
+        <p class="ev"><span class="l-es">Medido el 04-10-2026 con los datos sintéticos de planta-core (semilla 14224); respuestas esperadas derivadas de los datos y de una lista de aislamientos hecha a mano.</span><span class="l-en">Measured on 2026-10-04 with the synthetic planta-core data (seed 14224); expected answers derived from the data and from a hand-made isolation list.</span></p>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="sec2 v2"><div class="container">
+  <div class="h"><div class="eyebrow2"><span class="l-es">En corto</span><span class="l-en">In short</span></div><h2><span class="l-es">Qué problema resuelve y cómo</span><span class="l-en">What problem it solves and how</span></h2></div>
+  <div class="trio3"><div class="tcard prob"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span><span class="tnum">01</span></div>
+      <div class="k"><span class="l-es">El problema</span><span class="l-en">The problem</span></div><p><span class="l-es">Un técnico reporta «la bomba de glicol bota por el sello». Para armar la solicitud, el planeador busca el tag en el P&amp;ID, el historial en el sistema de mantenimiento, el manual en una carpeta y las válvulas a cerrar en el plano. Los ingenieros dedican entre el 40 y el 60 % de su tiempo a buscar y validar información.</span><span class="l-en">A technician reports "the glycol pump is leaking at the seal". To build the request, the planner looks up the tag on the P&amp;ID, the history in the maintenance system, the manual in a folder and the valves to close on the drawing. Engineers spend 40 to 60 % of their time looking for and validating information.</span></p></div><span class="tarrow" aria-hidden="true">→</span><div class="tcard sol"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span><span class="tnum">02</span></div>
+      <div class="k"><span class="l-es">La solución</span><span class="l-en">The solution</span></div><p><span class="l-es">Toda la planta vive en un grafo: equipos, líneas y válvulas, fallas codificadas con ISO 14224 y documentos con su página. Un agente identifica el equipo y el modo de falla, consulta cuatro herramientas deterministas (ficha, historial, fallas similares y aislamientos) y redacta el borrador de solicitud con cada dato citado. El ingeniero lo aprueba antes de emitir.</span><span class="l-en">The whole plant lives in a graph: equipment, lines and valves, failures coded with ISO 14224 and documents with their page. An agent identifies the equipment and the failure mode, queries four deterministic tools (datasheet, history, similar failures and isolations) and drafts the request with every fact cited. The engineer approves it before it is issued.</span></p></div><span class="tarrow" aria-hidden="true">→</span><div class="tcard dem"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.2 7 22l5-3 5 3-1.2-8.8"/></svg></span><span class="tnum">03</span></div>
+      <div class="k"><span class="l-es">Qué demuestra</span><span class="l-en">What it shows</span></div><p><span class="l-es">Competencia que demuestra: grafo de conocimiento industrial con un agente acotado. El agente no calcula, cita cada dato y no emite sin aprobación; una evaluación reproducible lo compara con un RAG plano sobre los mismos documentos y dice dónde pierde.</span><span class="l-en">Skill it demonstrates: an industrial knowledge graph with a bounded agent. The agent does not compute, cites every fact and never issues without approval; a reproducible evaluation compares it with a flat RAG over the same documents and says where it loses.</span></p></div></div>
+</div></section>
+<section class="sec2 v2" id="demo"><div class="container">
+  <div class="h"><div class="eyebrow2"><span class="l-es">Demo</span><span class="l-en">Demo</span></div><h2><span class="l-es">El agente atendiendo tres reportes de falla</span><span class="l-en">The agent handling three fault reports</span></h2><p class="sub"><span class="l-es">La animación usa la topología real de las áreas 1105 y 1205 y las salidas reales del agente para tres reportes: una bomba con fuga por el sello, un aeroenfriador taponado cuyo aislamiento deja fuera de servicio otros dos equipos, y un reporte sin tag. La aprobación del final la hace una persona; la animación solo la muestra.</span><span class="l-en">The animation uses the real topology of areas 1105 and 1205 and the agent's real outputs for three reports: a pump leaking at the seal, a plugged air cooler whose isolation takes two more items out of service, and a report without a tag. The final approval is made by a person; the animation only shows it.</span></p></div>
+  <div class="zones l-es"><div class="zone"><span class="zn">1</span><div><b>Grafo de proceso</b><span>Cada círculo es un equipo y cada moño una válvula de bloqueo, unidos por las líneas reales de la planta. Al aislar, el recorrido se ilumina hasta la primera válvula de cada rama.</span></div></div><div class="zone"><span class="zn">2</span><div><b>Agente</b><span>El reporte, el tag y el modo de falla identificados, las cuatro herramientas con su resultado y la solicitud en borrador hasta que alguien la aprueba.</span></div></div></div><div class="zones l-en"><div class="zone"><span class="zn">1</span><div><b>Process graph</b><span>Each circle is an item of equipment and each bow tie a block valve, joined by the plant's real lines. When isolating, the traversal lights up to the first valve on each branch.</span></div></div><div class="zone"><span class="zn">2</span><div><b>Agent</b><span>The report, the identified tag and failure mode, the four tools with their result and the request as a draft until someone approves it.</span></div></div></div><div class="demo-wrap demo3">
+      <div class="demo-bar">
+        <span class="live"><i></i><span class="l-es">Demo interactiva</span><span class="l-en">Interactive demo</span></span>
+        <span class="keys"><kbd>Space</kbd><span class="l-es">pausar</span><span class="l-en">pause</span><kbd>←</kbd><kbd>→</kbd><span class="l-es">mover</span><span class="l-en">seek</span><kbd>0</kbd><span class="l-es">reiniciar</span><span class="l-en">restart</span></span>
+      </div>
+      <div class="demo-body" id="demo-system"></div>
+    </div>
+</div></section>
+<section class="sec2 v2"><div class="container">
+  <div class="h"><div class="eyebrow2"><span class="l-es">Cómo funciona</span><span class="l-en">How it works</span></div><h2><span class="l-es">Qué hace el sistema, paso a paso</span><span class="l-en">What the system does, step by step</span></h2><p class="sub"><span class="l-es">Entra un reporte escrito por un técnico y sale el borrador de solicitud de entrega, con cada dato citado.</span><span class="l-en">A report written by a technician comes in and the draft handover request comes out, with every fact cited.</span></p></div>
+  <ol class="vsteps reveal2"><li><div class="n">1</div><div><b><span class="l-es">Cargar la planta en un grafo</span><span class="l-en">Load the plant into a graph</span></b><p><span class="l-es">La planta de referencia, una estación de compresión con cuatro unidades y tags ISA 5.1, entra como nodos y relaciones: áreas, sistemas, equipos, componentes y las líneas que los conectan. La jerarquía y los códigos de modo, mecanismo y causa de ISO 14224 son nodos de catálogo, no texto libre.</span><span class="l-en">The reference plant, a compression station with four units and ISA 5.1 tags, goes in as nodes and relationships: areas, systems, equipment, components and the lines connecting them. The ISO 14224 hierarchy and the mode, mechanism and cause codes are catalog nodes, not free text.</span></p></div></li><li><div class="n">2</div><div><b><span class="l-es">Extraer con cita y limpiar los tags</span><span class="l-en">Extract with citations and clean the tags</span></b><p><span class="l-es">Las propiedades obligatorias de cada hoja de datos se extraen y validan con Pydantic, y cada una guarda su documento y su página. De 202 órdenes de trabajo, 32 traen el tag mal escrito: 29 se resuelven por reglas o por similitud, 3 van a un reporte de conflictos y ninguna se asigna a un equipo equivocado.</span><span class="l-en">The mandatory properties of each datasheet are extracted and validated with Pydantic, and each keeps its document and page. Of 202 work orders, 32 carry a misspelled tag: 29 are resolved by rules or by similarity, 3 go to a conflict report and none is assigned to the wrong equipment.</span></p></div></li><li><div class="n">3</div><div><b><span class="l-es">Leer el reporte</span><span class="l-en">Read the report</span></b><p><span class="l-es">Del texto del técnico salen el tag («1105p01» se normaliza a 1105-P-01) y el síntoma, que se traduce a un modo de ISO 14224 («bota glicol por el sello» → fuga externa de fluido de proceso). Si no hay un tag legible, el sistema lista candidatos y pide el tag de la placa.</span><span class="l-en">The tag ("1105p01" is normalized to 1105-P-01) and the symptom come out of the technician's text, and the symptom is mapped to an ISO 14224 mode ("leaking glycol at the seal" → external leakage of process medium). If there is no legible tag, the system lists candidates and asks for the nameplate tag.</span></p></div></li><li><div class="n">4</div><div><b><span class="l-es">Llamar las cuatro herramientas</span><span class="l-en">Call the four tools</span></b><p><span class="l-es">Ficha del equipo, historial de órdenes, fallas del mismo modo en equipos de la misma clase y aislamientos. Los aislamientos recorren la topología aguas arriba y aguas abajo hasta la primera válvula de bloqueo de cada rama; la válvula de control no cuenta como aislamiento y un límite sin válvula se marca como rama abierta.</span><span class="l-en">Equipment datasheet, work-order history, failures of the same mode on equipment of the same class, and isolations. Isolations walk the topology upstream and downstream to the first block valve on each branch; the control valve does not count as isolation and a boundary without a valve is flagged as an open branch.</span></p></div></li><li><div class="n">5</div><div><b><span class="l-es">Redactar y esperar la aprobación</span><span class="l-en">Draft and wait for approval</span></b><p><span class="l-es">Una plantilla de campos fijos arma la solicitud: equipo, síntoma, intervención propuesta, aislamientos, permisos, cuadrilla y duración estimada por la mediana histórica. Queda en borrador hasta que alguien la aprueba con su nombre; emitir sin ese registro falla.</span><span class="l-en">A fixed-field template builds the request: equipment, symptom, proposed intervention, isolations, permits, crew and duration estimated from the historical median. It stays a draft until someone approves it with their name; issuing without that record fails.</span></p></div></li></ol><div class="arch2"><div class="arch-figure reveal">
+      <svg class="dg" viewBox="0 0 1180 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dos fases. Carga: la planta de referencia (topología, códigos ISO 14224, historial de órdenes y documentos) entra a un grafo; las propiedades de las hojas de datos se extraen con la cita de documento y página, y los tags mal escritos se resuelven por reglas y similitud o van a un reporte de conflictos. Consulta: de un reporte o una pregunta se identifican el equipo y el modo de falla; cuatro herramientas deterministas leen el grafo y una plantilla redacta la respuesta o el borrador de solicitud, que solo se emite con aprobación humana. Las preguntas documentales van a los manuales; la generación de Cypher con modelo de lenguaje para redacción libre está pendiente de llave.">
+<defs><marker id="arr-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/></marker>
+<marker id="arr-loop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b45309"/></marker>
+<marker id="arr-alt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#54655d"/></marker></defs>
+<style>
+.dg .dg-node { opacity: 0; transform: translateY(10px); transform-box: fill-box;
+  transition: opacity .55s cubic-bezier(.2,.7,.2,1) var(--d), transform .55s cubic-bezier(.2,.7,.2,1) var(--d); }
+.arch-figure.in .dg .dg-node { opacity: 1; transform: none; }
+.dg .dg-node rect { transition: stroke-width .2s, filter .2s; }
+.dg .dg-node:hover rect { stroke-width: 2; filter: drop-shadow(0 6px 14px rgba(0,168,132,.18)); }
+.dg .dg-base { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .8s ease-out var(--d); }
+.dg .dg-loop .dg-base, .dg .dg-alt .dg-base { stroke-dasharray: .035 .025; stroke-dashoffset: 0; opacity: 0; transition: opacity .6s var(--d); }
+.arch-figure.in .dg .dg-base { stroke-dashoffset: 0; opacity: 1; }
+.dg .dg-packet { stroke-dasharray: .09 .91; stroke-dashoffset: 1; opacity: 0; }
+.arch-figure.in .dg .dg-packet { opacity: .9; animation: dg-flow 2.6s linear infinite; animation-delay: calc(var(--d) + .8s); }
+.dg .dg-loop .dg-packet { animation-duration: 3.4s; }
+@keyframes dg-flow { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.dg text { pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  .dg .dg-node, .dg .dg-base, .dg .dg-loop .dg-base, .dg .dg-alt .dg-base { opacity: 1; transform: none; transition: none; stroke-dashoffset: 0; }
+  .dg .dg-packet, .arch-figure.in .dg .dg-packet { animation: none; opacity: 0; }
+}
+</style>
+<rect x="16" y="24" width="1148" height="124" rx="14" fill="rgba(0,168,132,0.035)" stroke="#0f766e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="18" y="16" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="start" stroke="none" class="l-es" letter-spacing="0.08em">CARGA · por lote de datos</text><text x="18" y="16" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="start" stroke="none" class="l-en">LOAD · per data batch</text>
+<rect x="26" y="198" width="1128" height="108" rx="14" fill="rgba(0,168,132,0.035)" stroke="#0f766e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="28" y="190" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="start" stroke="none" class="l-es" letter-spacing="0.08em">CONSULTA · por reporte o pregunta</text><text x="28" y="190" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="start" stroke="none" class="l-en">QUERY · per report or question</text>
+<g class="dg-edge dg-flow" style="--d:120ms"><path class="dg-base" d="M 338 97 L 354 97" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 338 97 L 354 97" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g class="dg-edge dg-flow" style="--d:120ms"><path class="dg-base" d="M 633 97 L 649 97" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 633 97 L 649 97" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g class="dg-edge dg-flow" style="--d:120ms"><path class="dg-base" d="M 884 97 L 900 97" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 884 97 L 900 97" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g class="dg-edge dg-alt" style="--d:210ms"><path class="dg-base" d="M 1026 134 L 1026 212 L 743 212 L 743 232" pathLength="1" stroke="#54655d" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arr-alt)"/><path class="dg-packet" d="M 1026 134 L 1026 212 L 743 212 L 743 232" pathLength="1" stroke="#54655d" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<text x="750" y="226" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="start" stroke="none" class="l-es">el grafo alimenta las herramientas</text>
+<text x="750" y="226" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="start" stroke="none" class="l-en">the graph feeds the tools</text>
+<g class="dg-edge dg-flow" style="--d:210ms"><path class="dg-base" d="M 217 263 L 259 263" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 217 263 L 259 263" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g class="dg-edge dg-flow" style="--d:210ms"><path class="dg-base" d="M 543 263 L 585 263" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 543 263 L 585 263" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g class="dg-edge dg-flow" style="--d:210ms"><path class="dg-base" d="M 900 263 L 942 263" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 900 263 L 942 263" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g class="dg-edge dg-alt" style="--d:300ms"><path class="dg-base" d="M 402 292 L 402 324 L 402 324 L 402 354" pathLength="1" stroke="#54655d" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arr-alt)"/><path class="dg-packet" d="M 402 292 L 402 324 L 402 324 L 402 354" pathLength="1" stroke="#54655d" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<text x="409" y="316" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="start" stroke="none" class="l-es">pregunta documental</text>
+<text x="409" y="316" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="start" stroke="none" class="l-en">document question</text>
+<g class="dg-edge dg-alt" style="--d:300ms"><path class="dg-base" d="M 725 356 L 725 294" pathLength="1" stroke="#54655d" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arr-alt)"/><path class="dg-packet" d="M 725 356 L 725 294" pathLength="1" stroke="#54655d" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<text x="717" y="348" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="end" stroke="none" class="l-es">pendiente</text>
+<text x="717" y="348" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="end" stroke="none" class="l-en">pending</text>
+<g class="dg-edge dg-flow" style="--d:300ms"><path class="dg-base" d="M 1042 292 L 1042 324 L 1042 324 L 1042 354" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 1042 292 L 1042 324 L 1042 324 L 1042 354" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<text x="1049" y="316" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="start" stroke="none" class="l-es">solicitud</text>
+<text x="1049" y="316" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="start" stroke="none" class="l-en">request</text>
+<g class="dg-edge dg-alt" style="--d:390ms"><path class="dg-base" d="M 1042 292 L 1042 306 L 1166 306 L 1166 434 L 1042 434 L 1042 476" pathLength="1" stroke="#54655d" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arr-alt)"/><path class="dg-packet" d="M 1042 292 L 1042 306 L 1166 306 L 1166 434 L 1042 434 L 1042 476" pathLength="1" stroke="#54655d" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<text x="1050" y="466" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="start" stroke="none" class="l-es">respuesta a pregunta</text>
+<text x="1050" y="466" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="start" stroke="none" class="l-en">answer to a question</text>
+<g class="dg-edge dg-flow" style="--d:390ms"><path class="dg-base" d="M 1042 414 L 1042 446 L 1042 446 L 1042 476" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 1042 414 L 1042 446 L 1042 446 L 1042 476" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g class="dg-edge dg-flow" style="--d:390ms"><path class="dg-base" d="M 402 414 L 402 446 L 1042 446 L 1042 476" pathLength="1" stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arr-flow)"/><path class="dg-packet" d="M 402 414 L 402 446 L 1042 446 L 1042 476" pathLength="1" stroke="#0f766e" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(30, 68)">
+<g class="dg-node" style="--d:0ms">
+<rect width="308" height="58" rx="9" fill="rgba(0,168,132,0.08)" stroke="#00a884" stroke-width="1.3"/>
+<text x="154" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Planta de referencia</text><text x="154" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Reference plant</text>
+<text x="154" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-es">topología · ISO 14224 · órdenes · documentos</text><text x="154" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-en">topology · ISO 14224 · orders · documents</text>
+</g></g>
+<g transform="translate(356, 68)">
+<g class="dg-node" style="--d:90ms">
+<rect width="277" height="58" rx="9" fill="rgba(240,180,41,0.08)" stroke="#b45309" stroke-width="1.3"/>
+<text x="138" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Extraer propiedades con cita</text><text x="138" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Extract properties with citation</text>
+<text x="138" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-es">Pydantic · documento y página</text><text x="138" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-en">Pydantic · document and page</text>
+</g></g>
+<g transform="translate(651, 68)">
+<g class="dg-node" style="--d:180ms">
+<rect width="233" height="58" rx="9" fill="rgba(240,180,41,0.08)" stroke="#b45309" stroke-width="1.3"/>
+<text x="117" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Resolver tags mal escritos</text><text x="117" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Resolve misspelled tags</text>
+<text x="117" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-es">reglas + similitud → conflictos</text><text x="117" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-en">rules + similarity → conflicts</text>
+</g></g>
+<g transform="translate(902, 60)">
+<g class="dg-node" style="--d:270ms">
+<rect width="248" height="74" rx="9" fill="rgba(17,27,33,0.02)" stroke="rgba(17,27,33,0.16)" stroke-width="1.3"/>
+<text x="124" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Grafo de la planta</text><text x="124" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Plant graph</text>
+<text x="124" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-es">memoria · exportable a Neo4j</text><text x="124" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-en">in memory · exportable to Neo4j</text>
+<text x="124" y="56" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-es">aislamientos como relación AISLA</text><text x="124" y="56" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-en">isolations as an ISOLATES relation</text>
+</g></g>
+<g transform="translate(40, 234)">
+<g class="dg-node" style="--d:360ms">
+<rect width="177" height="58" rx="9" fill="rgba(0,168,132,0.08)" stroke="#00a884" stroke-width="1.3"/>
+<text x="89" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Reporte o pregunta</text><text x="89" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Report or question</text>
+<text x="89" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-es">texto libre</text><text x="89" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-en">free text</text>
+</g></g>
+<g transform="translate(261, 234)">
+<g class="dg-node" style="--d:450ms">
+<rect width="282" height="58" rx="9" fill="rgba(240,180,41,0.08)" stroke="#b45309" stroke-width="1.3"/>
+<text x="141" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Identificar equipo y modo</text><text x="141" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Identify equipment and mode</text>
+<text x="141" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-es">tag · modo ISO 14224 · tipo de pregunta</text><text x="141" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-en">tag · ISO 14224 mode · question type</text>
+</g></g>
+<g transform="translate(587, 234)">
+<g class="dg-node" style="--d:540ms">
+<rect width="312" height="58" rx="9" fill="rgba(17,27,33,0.02)" stroke="rgba(17,27,33,0.16)" stroke-width="1.3"/>
+<text x="156" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Cuatro herramientas</text><text x="156" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Four tools</text>
+<text x="156" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-es">ficha · historial · similares · aislamientos</text><text x="156" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-en">sheet · history · similar · isolations</text>
+</g></g>
+<g transform="translate(944, 234)">
+<g class="dg-node" style="--d:630ms">
+<rect width="196" height="58" rx="9" fill="rgba(240,180,41,0.08)" stroke="#b45309" stroke-width="1.3"/>
+<text x="98" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Redactar con citas</text><text x="98" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Draft with citations</text>
+<text x="98" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-es">plantilla de campos fijos</text><text x="98" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#b45309" text-anchor="middle" stroke="none" class="l-en">fixed-field template</text>
+</g></g>
+<g transform="translate(298, 356)">
+<g class="dg-node" style="--d:720ms">
+<rect width="209" height="58" rx="9" fill="rgba(17,27,33,0.02)" stroke="rgba(17,27,33,0.16)" stroke-width="1.3"/>
+<text x="104" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Búsqueda en manuales</text><text x="104" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Manual search</text>
+<text x="104" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-es">TF-IDF · documento y página</text><text x="104" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-en">TF-IDF · document and page</text>
+</g></g>
+<g transform="translate(612, 356)">
+<g class="dg-node" style="--d:810ms">
+<rect width="264" height="58" rx="9" fill="rgba(0,168,132,0.10)" stroke="#0f766e" stroke-width="1.3"/>
+<text x="132" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Cypher con modelo de lenguaje</text><text x="132" y="22" font-family="Manrope" font-size="13" font-weight="700" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Cypher with a language model</text>
+<text x="132" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="middle" stroke="none" class="l-es">redacción libre · pendiente de llave</text><text x="132" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="middle" stroke="none" class="l-en">free wording · pending key</text>
+</g></g>
+<g transform="translate(940, 356)">
+<g class="dg-node" style="--d:900ms">
+<rect width="203" height="58" rx="9" fill="rgba(0,168,132,0.08)" stroke="#00a884" stroke-width="1.3"/>
+<text x="101" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Aprobación humana</text><text x="101" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Human approval</text>
+<text x="101" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-es">nombre y fecha registrados</text><text x="101" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#54655d" text-anchor="middle" stroke="none" class="l-en">name and date recorded</text>
+</g></g>
+<g transform="translate(904, 478)">
+<g class="dg-node" style="--d:990ms">
+<rect width="276" height="58" rx="9" fill="rgba(0,168,132,0.06)" stroke="#00a884" stroke-width="1.3"/>
+<text x="138" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-es">Respuesta o solicitud emitida</text><text x="138" y="22" font-family="Manrope" font-size="13" font-weight="600" fill="#111b21" text-anchor="middle" stroke="none" class="l-en">Answer or issued request</text>
+<text x="138" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="middle" stroke="none" class="l-es">cada dato con su orden, nodo o página</text><text x="138" y="40" font-family="IBM Plex Mono" font-size="10" font-weight="400" fill="#0f766e" text-anchor="middle" stroke="none" class="l-en">each fact with its order, node or page</text>
+</g></g>
+</svg>
+      <div class="dg-explain"><p class="l-es">Dos fases. Carga: la planta de referencia (topología, códigos ISO 14224, historial de órdenes y documentos) entra a un grafo; las propiedades de las hojas de datos se extraen con la cita de documento y página, y los tags mal escritos se resuelven por reglas y similitud o van a un reporte de conflictos. Consulta: de un reporte o una pregunta se identifican el equipo y el modo de falla; cuatro herramientas deterministas leen el grafo y una plantilla redacta la respuesta o el borrador de solicitud, que solo se emite con aprobación humana. Las preguntas documentales van a los manuales; la generación de Cypher con modelo de lenguaje para redacción libre está pendiente de llave.</p><p class="l-en">Two phases. Load: the reference plant (topology, ISO 14224 codes, work-order history and documents) goes into a graph; datasheet properties are extracted with the document and page citation, and misspelled tags are resolved by rules and similarity or sent to a conflict report. Query: from a report or a question the equipment and failure mode are identified; four deterministic tools read the graph and a template drafts the answer or the request draft, which is only issued with human approval. Document questions go to the manuals; Cypher generation with a language model for free wording is pending a key.</p></div>
+      <div class="dg-legend"><span class="dg-lg dg-lg-input"><i></i><em class="l-es">Entrada o salida</em><em class="l-en">Input or output</em></span><span class="dg-lg dg-lg-llm"><i></i><em class="l-es">Paso con modelo de lenguaje</em><em class="l-en">Language-model step</em></span><span class="dg-lg dg-lg-rule"><i></i><em class="l-es">Regla escrita en código</em><em class="l-en">Rule written in code</em></span><span class="dg-lg dg-lg-tool"><i></i><em class="l-es">Proceso o herramienta</em><em class="l-en">Process or tool</em></span><span class="dg-lg dg-lg-store"><i></i><em class="l-es">Almacenamiento</em><em class="l-en">Storage</em></span><span class="dg-lg dg-le-flow"><i></i><em class="l-es">flujo principal</em><em class="l-en">main flow</em></span><span class="dg-lg dg-le-alt"><i></i><em class="l-es">ruta alternativa</em><em class="l-en">alternative path</em></span></div>
+    </div></div>
+</div></section>
+<section class="sec2 v2"><div class="container">
+  <div class="h"><div class="eyebrow2"><span class="l-es">Guía de instalación</span><span class="l-en">Setup guide</span></div><h2><span class="l-es">Cómo ejecutarlo en su propio computador, paso a paso</span><span class="l-en">How to run it on your own computer, step by step</span></h2><p class="sub"><span class="l-es">Grabación real de la terminal, hecha el 04-10-2026 en Windows sobre el repositorio en main: historial, instalación y generación de los datos con semilla fija, 9 pruebas, la evaluación de 100 preguntas y 20 paráfrasis, los aislamientos y los tags, un reporte de falla de punta a punta y lo que falta por llave, por Docker o por personas.</span><span class="l-en">Real terminal recording made on 2026-10-04 on Windows on the repository at main: history, install and data generation with a fixed seed, 9 tests, the evaluation of 100 questions and 20 paraphrases, isolations and tags, one fault report end to end and what still needs a key, Docker or people.</span></p></div>
+  <div class="demo-wrap demo3">
+      <div class="demo-bar">
+        <span class="live"><i></i><span class="l-es">Grabación de la terminal</span><span class="l-en">Terminal recording</span></span>
+        <span class="keys"><kbd>Space</kbd><span class="l-es">pausar</span><span class="l-en">pause</span><kbd>←</kbd><kbd>→</kbd><span class="l-es">mover</span><span class="l-en">seek</span><kbd>0</kbd><span class="l-es">reiniciar</span><span class="l-en">restart</span></span>
+      </div>
+      <div class="demo-body" id="demo-terminal"></div>
+    </div>
+</div></section>
+<section class="sec2 v2"><div class="container">
+  <div class="h"><div class="eyebrow2"><span class="l-es">Resultados</span><span class="l-en">Results</span></div><h2><span class="l-es">Qué tan bien funciona</span><span class="l-en">How well it works</span></h2></div>
+  <div class="rgrid bars2 reveal2"><div class="rcard">
+      <div class="rtop"><div class="rk"><span class="l-es">Preguntas sobre la planta</span><span class="l-en">Plant questions</span></div><span class="rstate rs-med"><span class="l-es">medido</span><span class="l-en">measured</span></span></div>
+      <div class="rbig">1.00</div>
+      <div class="rbars"><div class="rrow"><span class="rl"><span class="l-es">RAG plano</span><span class="l-en">flat RAG</span></span><div class="t"><i class="base" style="--w:0.160"></i></div><span class="rv">0.16</span></div><div class="rrow"><span class="rl"><span class="l-es">grafo</span><span class="l-en">graph</span></span><div class="t"><i class="goal" style="--w:1.000;animation-delay:.25s"></i></div><span class="rv">1.00</span></div></div>
+      <p><span class="l-es">100 preguntas en cuatro familias: identificación, topología, historial y completitud. El RAG plano se mide como cota superior: acierta si los cinco fragmentos recuperados contienen toda la evidencia.</span><span class="l-en">100 questions in four families: identification, topology, history and completeness. The flat RAG is measured as an upper bound: it scores if the five retrieved chunks contain all the evidence.</span></p>
+    </div><div class="rcard">
+      <div class="rtop"><div class="rk"><span class="l-es">Redacción libre · 20 paráfrasis</span><span class="l-en">Free wording · 20 paraphrases</span></div><span class="rstate rs-med"><span class="l-es">medido</span><span class="l-en">measured</span></span></div>
+      <div class="rbig">0.10</div>
+      <div class="rbars"><div class="rrow"><span class="rl"><span class="l-es">RAG plano</span><span class="l-en">flat RAG</span></span><div class="t"><i class="base" style="--w:0.200"></i></div><span class="rv">0.20</span></div><div class="rrow"><span class="rl"><span class="l-es">grafo</span><span class="l-en">graph</span></span><div class="t"><i class="goal" style="--w:0.100;animation-delay:.25s"></i></div><span class="rv">0.10</span></div></div>
+      <p><span class="l-es">Preguntas escritas fuera de las plantillas del enrutador. Aquí el grafo pierde: manda 16 de 20 a los manuales. Es la brecha que cierra la generación de Cypher con un modelo de lenguaje, pendiente de llave.</span><span class="l-en">Questions written outside the router's templates. Here the graph loses: it sends 16 of 20 to the manuals. That is the gap closed by Cypher generation with a language model, pending a key.</span></p>
+    </div><div class="rcard">
+      <div class="rtop"><div class="rk"><span class="l-es">Tokens de contexto por respuesta</span><span class="l-en">Context tokens per answer</span></div><span class="rstate rs-med"><span class="l-es">medido</span><span class="l-en">measured</span></span></div>
+      <div class="rbig">15</div>
+      <div class="rbars"><div class="rrow"><span class="rl"><span class="l-es">RAG plano</span><span class="l-en">flat RAG</span></span><div class="t"><i class="base" style="--w:1.000"></i></div><span class="rv">190</span></div><div class="rrow"><span class="rl"><span class="l-es">grafo</span><span class="l-en">graph</span></span><div class="t"><i class="goal" style="--w:0.079;animation-delay:.25s"></i></div><span class="rv">15</span></div></div>
+      <p><span class="l-es">Mediana de lo que se le entrega al redactor, en tokens aproximados. El grafo entrega el dato y su cita; el RAG plano, cinco fragmentos de texto. Menos es mejor.</span><span class="l-en">Median of what is handed to the writer, in approximate tokens. The graph hands over the fact and its citation; the flat RAG, five text chunks. Lower is better.</span></p>
+    </div><div class="rcard">
+      <div class="rtop"><div class="rk"><span class="l-es">Aislamientos propuestos</span><span class="l-en">Proposed isolations</span></div><span class="rstate rs-med"><span class="l-es">medido</span><span class="l-en">measured</span></span></div>
+      <div class="rbig">21/21</div>
+      <div class="rbars"><div class="rrow nobar"><span class="rl"><span class="l-es">precisión por válvula</span><span class="l-en">precision per valve</span></span><span class="rv">1.00</span></div><div class="rrow nobar"><span class="rl"><span class="l-es">exhaustividad por válvula</span><span class="l-en">recall per valve</span></span><span class="rv">1.00</span></div></div>
+      <p><span class="l-es">Los 21 equipos críticos contra una lista escrita a mano sobre las líneas de la planta, sin ejecutar el algoritmo. Es la comparación que pide el manual: aislamientos propuestos contra los definidos a mano.</span><span class="l-en">The 21 critical items against a list written by hand over the plant lines, without running the algorithm. It is the comparison the manual asks for: proposed isolations against those defined by hand.</span></p>
+    </div><div class="rcard">
+      <div class="rtop"><div class="rk"><span class="l-es">Tags mal escritos en órdenes</span><span class="l-en">Misspelled tags in work orders</span></div><span class="rstate rs-med"><span class="l-es">medido</span><span class="l-en">measured</span></span></div>
+      <div class="rbig">29/32</div>
+      <div class="rbars"><div class="rrow nobar"><span class="rl"><span class="l-es">enviados al reporte de conflictos</span><span class="l-en">sent to the conflict report</span></span><span class="rv">3</span></div><div class="rrow nobar"><span class="rl"><span class="l-es">resueltos a un equipo equivocado</span><span class="l-en">resolved to the wrong equipment</span></span><span class="rv">0</span></div></div>
+      <p><span class="l-es">202 órdenes sintéticas, 32 con el tag mal escrito a propósito. Los ambiguos, como «1105-P-0», no se adivinan: van a revisión humana.</span><span class="l-en">202 synthetic work orders, 32 with the tag misspelled on purpose. Ambiguous ones, such as "1105-P-0", are not guessed: they go to human review.</span></p>
+    </div><div class="rcard">
+      <div class="rtop"><div class="rk"><span class="l-es">Minutos por reporte de falla</span><span class="l-en">Minutes per fault report</span></div><span class="rstate"><span class="l-es">pendiente</span><span class="l-en">pending</span></span></div>
+      <div class="rbig">—</div>
+      <div class="rbars"><div class="rrow nobar"><span class="rl"><span class="l-es">línea base</span><span class="l-en">baseline</span></span><span class="rv"><span class="l-es">búsqueda manual</span><span class="l-en">manual search</span></span></div><div class="rrow nobar"><span class="rl"><span class="l-es">requiere</span><span class="l-en">requires</span></span><span class="rv"><span class="l-es">usuarios cronometrados</span><span class="l-en">timed users</span></span></div></div>
+      <p><span class="l-es">Es la cifra de negocio del caso: cuánto tarda un planeador en resolver un reporte con y sin el asistente. Se mide con personas; todavía no hay usuarios.</span><span class="l-en">It is the business figure of the case: how long a planner takes to resolve a report with and without the assistant. It is measured with people; there are no users yet.</span></p>
+    </div></div>
+  <p class="rnote"><span class="l-es">Datos sintéticos de planta-core (semilla 14224). Las respuestas esperadas se derivan de los datos crudos y, para topología, de una lista hecha a mano; la verificación pregunta por pregunta por un ingeniero de planta está pendiente. Detalle y regeneración: </span><span class="l-en">Synthetic planta-core data (seed 14224). Expected answers are derived from the raw data and, for topology, from a hand-made list; question-by-question verification by a plant engineer is pending. Detail and how to regenerate: </span><a href="https://github.com/Edgar-Suarez-creator/p1-asistente-planta/blob/main/evaluacion/RESULTS.md" target="_blank" rel="noopener">evaluacion/RESULTS.md</a></p>
+</div></section>
+<section class="sec2 v2"><div class="container">
+  <div class="h"><div class="eyebrow2"><span class="l-es">Stack y decisiones</span><span class="l-en">Stack and decisions</span></div><h2><span class="l-es">Tecnologías usadas y por qué</span><span class="l-en">Technologies used and why</span></h2></div>
+  <div class="sgrid"><div class="scard"><div class="shead"><span class="sicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/></svg></span><span class="k"><span class="l-es">Grafo</span><span class="l-en">Graph</span></span></div><div class="chips"><span class="chip">networkx en memoria</span><span class="chip">export Cypher · Neo4j 5</span><span class="chip">ISO 14224 como nodos</span><span class="chip">propiedades por clase (CFIHOS)</span></div><p class="swhy"><span class="l-es">El grafo en memoria permite desarrollar y evaluar sin servicios; el mismo grafo se exporta a Cypher para Neo4j. Los modos, mecanismos y causas de ISO 14224 son nodos, así que contar fallas por modo es un recorrido y no una búsqueda de texto.</span><span class="l-en">The in-memory graph allows development and evaluation without services; the same graph is exported to Cypher for Neo4j. ISO 14224 modes, mechanisms and causes are nodes, so counting failures by mode is a traversal, not a text search.</span></p></div><div class="scard"><div class="shead"><span class="sicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><span class="k"><span class="l-es">Recuperación</span><span class="l-en">Retrieval</span></span></div><div class="chips"><span class="chip">enrutador por reglas</span><span class="chip">plantillas Cypher</span><span class="chip">TF-IDF sobre manuales</span><span class="chip">RAG plano de comparación</span></div><p class="swhy"><span class="l-es">Las plantillas hacen la consulta determinista, citable y sin costo; la búsqueda en manuales atiende lo documental. El RAG plano existe para medir contra el método que el sistema reemplaza, sobre los mismos documentos.</span><span class="l-en">Templates make the query deterministic, citable and free; manual search handles document questions. The flat RAG exists to measure against the method the system replaces, over the same documents.</span></p></div><div class="scard"><div class="shead"><span class="sicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><span class="k"><span class="l-es">Agente y datos</span><span class="l-en">Agent and data</span></span></div><div class="chips"><span class="chip">4 herramientas deterministas</span><span class="chip">Pydantic con cita</span><span class="chip">aprobación registrada</span><span class="chip">semilla 14224</span></div><p class="swhy"><span class="l-es">El agente solo llama herramientas y llena una plantilla de campos fijos: no calcula horas, válvulas ni conteos por su cuenta. Los datos sintéticos se regeneran idénticos con la misma semilla.</span><span class="l-en">The agent only calls tools and fills a fixed-field template: it does not compute hours, valves or counts on its own. The synthetic data regenerates identically with the same seed.</span></p></div></div>
+  <div class="dtitle"><span class="l-es">Decisiones de diseño</span><span class="l-en">Design decisions</span></div>
+  <div class="dgrid"><div class="dcard"><div class="dvs"><span class="yes">✓ <span class="l-es">El agente llama herramientas</span><span class="l-en">The agent calls tools</span></span><span class="no">✕ <span class="l-es">el modelo calcula</span><span class="l-en">the model computes</span></span></div><p><span class="l-es">Válvulas, conteos y duraciones salen de recorridos y medianas sobre el grafo. Si un número no viene de una herramienta, no aparece en la solicitud.</span><span class="l-en">Valves, counts and durations come from traversals and medians over the graph. If a number does not come from a tool, it does not appear in the request.</span></p></div><div class="dcard"><div class="dvs"><span class="yes">✓ <span class="l-es">Pedir el tag</span><span class="l-en">Ask for the tag</span></span><span class="no">✕ <span class="l-es">adivinar el equipo</span><span class="l-en">guess the equipment</span></span></div><p><span class="l-es">Un reporte sin tag legible queda sin resolver, con candidatos; un tag ambiguo en una orden va al reporte de conflictos. Equivocarse de equipo es peor que preguntar.</span><span class="l-en">A report without a legible tag stays unresolved, with candidates; an ambiguous tag in a work order goes to the conflict report. Getting the equipment wrong is worse than asking.</span></p></div><div class="dcard"><div class="dvs"><span class="yes">✓ <span class="l-es">Borrador con aprobación</span><span class="l-en">Draft with approval</span></span><span class="no">✕ <span class="l-es">emisión automática</span><span class="l-en">automatic issue</span></span></div><p><span class="l-es">Permisos y aislamientos exigen a una persona: la solicitud queda en borrador hasta que alguien la aprueba con su nombre, y emitir sin ese registro falla.</span><span class="l-en">Permits and isolations require a person: the request stays a draft until someone approves it with their name, and issuing without that record fails.</span></p></div></div>
+</div></section>
+<section class="sec2 v2"><div class="container">
+    <a class="next-card" href="../index.html#projects">
+      <div>
+        <div class="label"><span class="l-es">Siguiente proyecto · en construcción</span><span class="l-en">Next project · in progress</span></div>
+        <h3>P2 · <span class="l-es">Digitalización de P&amp;ID y definición de sistemas</span><span class="l-en">P&amp;ID digitization and system definition</span></h3>
+        <p style="color: var(--text-dim); margin-top: 6px;"><span class="l-es">Tomará un P&amp;ID escaneado y devolverá el grafo del proceso en DEXPI, la lista de tags, los subsistemas propuestos y los aislamientos por equipo. Reemplazará la topología que hoy se escribe a mano para este proyecto.</span><span class="l-en">It will take a scanned P&amp;ID and return the process graph in DEXPI, the tag list, the proposed subsystems and the isolations per item. It will replace the topology that is written by hand for this project today.</span></p>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+</div></section>
+<footer>
+  <div class="footer-inner">
+    <div>// Edgar Suárez · Planeación y control · 2026</div>
+    <div>github.com/Edgar-Suarez-creator</div>
+  </div>
+</footer>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="animations.jsx?v=1790706258"></script>
+<script type="text/babel" src="_shared.jsx?v=1790706258"></script>
+<script type="text/babel" src="p01.jsx?v=1791141000"></script>
+<script type="text/babel">
+  function mountWhenReady() {
+    if (typeof P01TerminalDemo === 'undefined' || typeof P01SystemDemo === 'undefined') {
+      setTimeout(mountWhenReady, 50); return;
+    }
+    ReactDOM.createRoot(document.getElementById('demo-terminal')).render(<P01TerminalDemo/>);
+    ReactDOM.createRoot(document.getElementById('demo-system')).render(<P01SystemDemo/>);
+  }
+  mountWhenReady();
+</script>
+<script>
+  const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+
+
+<script>
+(function(){
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('#lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
+    try { sessionStorage.setItem('lang', lang); } catch(e) {}
+  }
+  document.querySelectorAll('#lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  let saved = 'es'; try { saved = sessionStorage.getItem('lang') || 'es'; } catch(e) {}
+  setLang(saved);
+  const io2 = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io2.unobserve(e.target); } }), { threshold: .2 });
+  document.querySelectorAll('.reveal2').forEach(el => io2.observe(el));
+  setTimeout(() => document.querySelectorAll('.reveal2').forEach(el => el.classList.add('in')), 1200);
+})();
+</script>
+
+<script data-rv>
+(function(){
+  // aparición al hacer scroll: las secciones entran al asomar un 10 % del alto de la ventana; sus tarjetas, escalonadas
+  var ITEM='.trio3 > div, .scard, .dcard, .rcard, .zone';
+  var secs=[].slice.call(document.querySelectorAll('section.sec2.v2'));
+  var items=[].slice.call(document.querySelectorAll(ITEM));
+  if(!('IntersectionObserver' in window)) return;
+  var show=function(e){ e.target.classList.add('in'); };
+  var ioS=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ show(e); ioS.unobserve(e.target); } }); },{threshold:0,rootMargin:'0px 0px -10% 0px'});
+  var ioI=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ show(e); ioI.unobserve(e.target); } }); },{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  secs.forEach(function(el){ el.classList.add('rvl'); ioS.observe(el); });
+  items.forEach(function(el){ var sib=[].slice.call(el.parentElement.children).filter(function(x){ return x.matches(ITEM); }); var i=sib.indexOf(el); if(i>0) el.style.setProperty('--rd',(Math.min(i,8)*60)+'ms'); el.classList.add('rvl'); ioI.observe(el); });
+  // seguro: lo que ya está en pantalla se muestra aunque el observador no haya disparado
+  setTimeout(function(){ secs.concat(items).forEach(function(el){ var r=el.getBoundingClientRect(); if(r.top<innerHeight&&r.bottom>0) el.classList.add('in'); }); },2500);
+})();
+</script>
+</body>
+</html>
