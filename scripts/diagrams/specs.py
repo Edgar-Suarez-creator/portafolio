@@ -32,13 +32,13 @@ SPECS["01"] = Spec(
         "reporte o una pregunta se identifican el equipo y el modo de falla; cuatro herramientas deterministas leen el "
         "grafo y una plantilla redacta la respuesta o el borrador de solicitud, que solo se emite con aprobación "
         "humana. Las preguntas documentales van a los manuales; la generación de Cypher con modelo de lenguaje para "
-        "redacción libre está pendiente de llave.",
+        "redacción libre está pendiente de una llave de API.",
         "Two phases. Load: the reference plant (topology, ISO 14224 codes, work-order history and documents) goes "
         "into a graph; datasheet properties are extracted with the document and page citation, and misspelled tags "
         "are resolved by rules and similarity or sent to a conflict report. Query: from a report or a question the "
         "equipment and failure mode are identified; four deterministic tools read the graph and a template drafts the "
         "answer or the request draft, which is only issued with human approval. Document questions go to the "
-        "manuals; Cypher generation with a language model for free wording is pending a key.",
+        "manuals; Cypher generation with a language model for free wording is pending an API key.",
     ),
     rows=[
         [
@@ -66,7 +66,7 @@ SPECS["01"] = Spec(
             N("manual", ("Búsqueda en manuales", "Manual search"),
               [("TF-IDF · documento y página", "TF-IDF · document and page")], "tool", align="ident"),
             N("llm", ("Cypher con modelo de lenguaje", "Cypher with a language model"),
-              [("redacción libre · pendiente de llave", "free wording · pending key")], "llm", align="tools"),
+              [("redacción libre · falta llave de API", "free wording · API key pending")], "llm", align="tools"),
             N("approve", ("Aprobación humana", "Human approval"),
               [("nombre y fecha registrados", "name and date recorded")], "input", align="draft"),
         ],

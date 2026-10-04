@@ -4,10 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#eef2f0" />
-<title>Edgar Suárez — Planeación y control · Portafolio</title>
+<title>Edgar R. Suárez Macías — Planeación y control de proyectos · Portafolio</title>
 <meta name="description" content="Portafolio de planeación y control: ocho sistemas sobre una misma planta de referencia, de la falla a la solicitud de entrega, del P&amp;ID al subsistema y del cronograma a la certificación." />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Edgar Suárez — Planeación y control · Portafolio" />
+<meta property="og:title" content="Edgar R. Suárez Macías — Planeación y control de proyectos · Portafolio" />
 <meta property="og:description" content="Portafolio de planeación y control: ocho sistemas sobre una misma planta de referencia, de la falla a la solicitud de entrega, del P&amp;ID al subsistema y del cronograma a la certificación." />
 <meta name="twitter:card" content="summary" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -639,6 +639,14 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
 .crit li.ok::before{content:"✓";background:var(--teal-tint);color:var(--teal-ink)}
 .crit li.mid::before{content:"◐";background:var(--amber-tint);color:var(--amber-ink)}
 .crit code{font-family:var(--mono);font-size:12px;background:var(--panel-2);border-radius:5px;padding:1px 5px}
+.dtitle-i{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-ink);margin:24px 0 10px}
+.proj-tags span{font-size:12px}
+.uni-col{display:grid;gap:12px}
+.uni-deg-s{font-size:19px}
+.about-stat-label{line-height:1.4}
+@media(max-width:900px){.about-stats{grid-template-columns:1fr 1fr}}
+/* nombre completo largo: en pantallas medianas la foto y los botones pasan debajo del título */
+@media(max-width:1100px){.top{grid-template-columns:1fr !important;align-items:start}.top-right{flex-direction:row !important;flex-wrap:wrap;align-items:center !important;text-align:left;gap:18px}.top h1{max-width:none}}
 </style>
 </head>
 <body>
@@ -662,8 +670,8 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
 
   <header class="top" id="hero">
     <div>
-      <h1>Edgar Suárez — <span><span class="l-es">planeación y control</span><span class="l-en">planning and control</span></span>.</h1>
-      <div class="sub"><span class="l-es">Ocho sistemas sobre una misma planta de referencia, una estación de compresión de gas, para que el mantenimiento, la construcción y la entrega trabajen con datos trazables: cada cifra con su línea base y cada acción irreversible con aprobación humana.</span><span class="l-en">Eight systems over the same reference plant, a gas compression station, so that maintenance, construction and handover work with traceable data: every figure with its baseline and every irreversible action with human approval.</span></div>
+      <h1>Edgar R. Suárez Macías — <span><span class="l-es">planeación y control de proyectos</span><span class="l-en">project planning and control</span></span>.</h1>
+      <div class="sub"><span class="l-es">Más de 22 años planeando, programando y controlando proyectos de petróleo y gas: comisionamiento, paradas de planta, construcción y entrega de facilidades, materiales y control presupuestal. Este portafolio lleva esa experiencia a sistemas con datos trazables.</span><span class="l-en">More than 22 years planning, scheduling and controlling oil and gas projects: commissioning, plant shutdowns, construction and handover of facilities, materials and budget control. This portfolio takes that experience into systems with traceable data.</span></div>
     </div>
     <div class="top-right">
       <div class="hero-photo"><div class="ph-ini" role="img" aria-label="Espacio para la foto">ES</div></div>
@@ -677,34 +685,41 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
 
   <section class="panel" id="about">
     <div class="eyebrow"><span class="l-es">01 · Sobre mí</span><span class="l-en">01 · About me</span></div>
-    <h2 class="title"><span class="l-es">Planeación y control con datos que se pueden verificar</span><span class="l-en">Planning and control with data that can be checked</span></h2>
+    <h2 class="title"><span class="l-es">Planeación y control de proyectos, de la obra al comisionamiento</span><span class="l-en">Project planning and control, from construction to commissioning</span></h2>
+    <div class="about-stats">
+      <div class="about-stat"><div class="about-stat-num">32,8</div><div class="about-stat-label"><span class="l-es">años de experiencia profesional</span><span class="l-en">years of professional experience</span></div></div>
+      <div class="about-stat"><div class="about-stat-num">21,7</div><div class="about-stat-label"><span class="l-es">años programando y controlando obra</span><span class="l-en">years scheduling and controlling construction</span></div></div>
+      <div class="about-stat"><div class="about-stat-num">7,5</div><div class="about-stat-label"><span class="l-es">años en el contrato marco de comisionamiento para Ecopetrol</span><span class="l-en">years on the commissioning framework contract for Ecopetrol</span></div></div>
+      <div class="about-stat"><div class="about-stat-num">26</div><div class="about-stat-label"><span class="l-es">órdenes de servicio controladas en ese contrato</span><span class="l-en">service orders controlled on that contract</span></div></div>
+    </div>
     <div class="fis-text">
-      <p><span class="l-es">Este portafolio reúne los sistemas que construyo para el trabajo de planeación y control en una planta: del reporte de falla a la solicitud de entrega, del P&amp;ID al subsistema, del cronograma a la certificación. Cada proyecto parte de un problema de planta, se compara con el método que reemplaza y declara lo que no hace.</span><span class="l-en">This portfolio brings together the systems I build for planning and control work in a plant: from the fault report to the handover request, from the P&amp;ID to the subsystem, from the schedule to certification. Each project starts from a plant problem, is compared with the method it replaces and states what it does not do.</span></p>
-      <p class="pend"><span class="l-es">Pendiente · su presentación en dos o tres párrafos: trayectoria, sector, en qué se especializa y qué busca. Reemplace este recuadro.</span><span class="l-en">Pending · your introduction in two or three paragraphs: career, sector, specialty and what you are looking for. Replace this box.</span></p>
+      <p><span class="l-es">Llevo más de 22 años en la gestión, planeación y control de proyectos, en empresas como Massy Energy, OBS, Wood Group, I.T.S., Electro Hidráulica, Distral y CMD S.A. Me he especializado en planeación, programación, control financiero y gestión de materiales, con un enfoque en la eficiencia, la calidad y el cumplimiento técnico.</span><span class="l-en">I have more than 22 years in project management, planning and control, at companies such as Massy Energy, OBS, Wood Group, I.T.S., Electro Hidráulica, Distral and CMD S.A. I specialize in planning, scheduling, financial control and materials management, with a focus on efficiency, quality and technical compliance.</span></p>
+      <p><span class="l-es">Elaboro, sigo y controlo presupuestos, administro recursos, optimizo costos, controlo inventarios y analizo rendimientos y proyecciones financieras. He liderado equipos multidisciplinarios asegurando la disponibilidad de materiales, la ejecución técnica correcta, la trazabilidad documental y el cumplimiento de los estándares de calidad.</span><span class="l-en">I prepare, track and control budgets, manage resources, optimize costs, control inventories and analyze productivity and financial projections. I have led multidisciplinary teams ensuring material availability, correct technical execution, document traceability and compliance with quality standards.</span></p>
+      <p><span class="l-es">Este portafolio lleva esa experiencia a sistemas con datos: del reporte de falla a la solicitud de entrega, del P&amp;ID al subsistema, del cronograma a la certificación. Cada proyecto parte de un problema real de planta, se compara con el método que reemplaza y declara lo que no hace.</span><span class="l-en">This portfolio takes that experience into data systems: from the fault report to the handover request, from the P&amp;ID to the subsystem, from the schedule to certification. Each project starts from a real plant problem, is compared with the method it replaces and states what it does not do.</span></p>
     </div>
   </section>
 
   <section class="panel" id="stack">
     <div class="eyebrow"><span class="l-es">02 · Herramientas</span><span class="l-en">02 · Tools</span></div>
-    <h2 class="title"><span class="l-es">Las herramientas de la serie</span><span class="l-en">The tools of the series</span></h2>
-    <p class="sub"><span class="l-es">Lo que usan los ocho proyectos, agrupado en ocho capas: de la planeación y la confiabilidad a los datos de ingeniería, los modelos y la reproducibilidad.</span><span class="l-en">What the eight projects use, grouped in eight layers: from planning and reliability to engineering data, models and reproducibility.</span></p>
+    <h2 class="title"><span class="l-es">Las herramientas con las que trabajo</span><span class="l-en">The tools I work with</span></h2>
+    <p class="sub"><span class="l-es">Mi stack agrupado en ocho capas: siete vienen de mi trayectoria en planeación, control, comisionamiento y materiales; la última es la que usan los proyectos de este portafolio.</span><span class="l-en">My stack grouped in eight layers: seven come from my career in planning, control, commissioning and materials; the last one is what the projects in this portfolio use.</span></p>
     <div class="stack-matrix four">
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">Σ</div><h5><span class="l-es">Planeación y control</span><span class="l-en">Planning and control</span></h5></div>
-        <div class="stack-tags"><span>Primavera P6 · XER</span><span>Valor ganado · Earned Schedule</span><span>DCMA 14 puntos</span><span>CP-SAT</span><span>Monte Carlo P10–P80</span></div></div>
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">λ</div><h5><span class="l-es">Confiabilidad y mantenimiento</span><span class="l-en">Reliability and maintenance</span></h5></div>
-        <div class="stack-tags"><span>ISO 14224</span><span>Criticidad</span><span>Weibull con censura</span><span>FMECA</span><span>Backlog y cumplimiento</span></div></div>
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">⌘</div><h5><span class="l-es">Datos de ingeniería</span><span class="l-en">Engineering data</span></h5></div>
-        <div class="stack-tags"><span>Tags ISA 5.1</span><span>CFIHOS 2.0</span><span>DEXPI · pyDEXPI</span><span>P&amp;ID</span><span>ITR y punch</span></div></div>
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">∇</div><h5><span class="l-es">Grafos y recuperación</span><span class="l-en">Graphs and retrieval</span></h5></div>
-        <div class="stack-tags"><span>Neo4j · Cypher</span><span>networkx</span><span>GraphRAG</span><span>TF-IDF · embeddings</span></div></div>
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">◆</div><h5><span class="l-es">Modelos</span><span class="l-en">Models</span></h5></div>
-        <div class="stack-tags"><span>scikit-learn</span><span>LightGBM</span><span>YOLO · Relationformer</span><span>LSTM · CNN</span><span>Grad-CAM</span></div></div>
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">⟨/⟩</div><h5><span class="l-es">Software e infraestructura</span><span class="l-en">Software and infrastructure</span></h5></div>
-        <div class="stack-tags"><span>Python</span><span>Pydantic</span><span>FastAPI</span><span>Docker Compose</span><span>PostgreSQL</span><span>pytest</span></div></div>
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">∫</div><h5><span class="l-es">Reproducibilidad</span><span class="l-en">Reproducibility</span></h5></div>
-        <div class="stack-tags"><span>semilla fija</span><span>DVC</span><span>MLflow</span><span>make setup · eval · demo</span><span>partición por entidad</span></div></div>
-      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">⇄</div><h5><span class="l-es">Normas y referencias</span><span class="l-en">Standards and references</span></h5></div>
-        <div class="stack-tags"><span>NORSOK Z-006</span><span>ISO 8501-1</span><span>ISO 14224</span><span>CFIHOS</span><span>DCMA 14-point</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">Σ</div><h5><span class="l-es">Planeación y programación</span><span class="l-en">Planning and scheduling</span></h5></div>
+        <div class="stack-tags"><span>Primavera P6 R8.2</span><span>Microsoft Project</span><span>PDT P-90 · P-50 · P-10</span><span>Ruta crítica · curvas S</span><span>Paradas de planta</span><span>AWP</span><span>SIMOPS</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">$</div><h5><span class="l-es">Control de costos y presupuesto</span><span class="l-en">Cost and budget control</span></h5></div>
+        <div class="stack-tags"><span>Control presupuestal</span><span>Análisis de desviaciones</span><span>Flujo de caja</span><span>A.P.U.</span><span>Facturación por ítems de pago</span><span>Mayores y menores cantidades</span><span>Horas hombre</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">⌘</div><h5><span class="l-es">Completions y comisionamiento</span><span class="l-en">Completions and commissioning</span></h5></div>
+        <div class="stack-tags"><span>Intergraph Smart Completions</span><span>Precomisionamiento</span><span>Comisionamiento</span><span>Certificación AC1 · HC1</span><span>Archivos C3</span><span>Punch list y protocolos</span><span>Certificación de sistemas</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">⇄</div><h5><span class="l-es">Materiales y preservación</span><span class="l-en">Materials and preservation</span></h5></div>
+        <div class="stack-tags"><span>Intergraph Smart Materials</span><span>Control de materiales</span><span>Preservación de equipos</span><span>Inventarios</span><span>Compras y proveedores</span><span>Planes de vendor</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">◆</div><h5><span class="l-es">Calidad y QA/QC</span><span class="l-en">Quality and QA/QC</span></h5></div>
+        <div class="stack-tags"><span>QA/QC</span><span>Pruebas FAT</span><span>Vibraciones · termografía · ultrasonido</span><span>Memorias de cálculo</span><span>Planos as-built y red-line</span><span>Control estadístico</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">∇</div><h5><span class="l-es">Reportes e indicadores</span><span class="l-en">Reporting and KPIs</span></h5></div>
+        <div class="stack-tags"><span>Power BI</span><span>Tableros de control</span><span>Indicadores semanales a gerencia</span><span>Informes diarios · semanales · mensuales</span><span>Avance físico y financiero</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">⟨/⟩</div><h5><span class="l-es">Diseño y software técnico</span><span class="l-en">Design and technical software</span></h5></div>
+        <div class="stack-tags"><span>AutoCAD 2D y 3D</span><span>AutoLisp</span><span>Seguimiento en modelo 3D</span><span>Isometrías</span><span>Topografía</span><span>AXAPTA</span></div></div>
+      <div class="stack-layer"><div class="stack-layer-head"><div class="stack-layer-icon">λ</div><h5><span class="l-es">Datos e IA en este portafolio</span><span class="l-en">Data and AI in this portfolio</span></h5></div>
+        <div class="stack-tags"><span>Python</span><span>Neo4j · grafos</span><span>ISO 14224</span><span>Pydantic</span><span>Docker</span><span>Evaluación con línea base</span></div></div>
     </div>
   </section>
 
@@ -717,7 +732,7 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
         <div class="card-head"><span class="project-num">P1</span><span class="badge badge-live"><span class="l-es">● Demo interactiva</span><span class="l-en">● Interactive demo</span></span></div>
         <h3><span class="l-es">Asistente de planta sobre grafo de conocimiento</span><span class="l-en">Plant assistant on a knowledge graph</span></h3>
         <p class="card-sub"><span class="l-es">Reporte de falla → ficha, historial, fallas similares y aislamientos → solicitud de entrega</span><span class="l-en">Fault report → datasheet, history, similar failures and isolations → handover request</span></p>
-        <p class="card-problem"><span class="l-es">En 100 preguntas sobre la planta el grafo acierta las 100 y un RAG plano, en el mejor caso, 16. Con redacción libre baja a 10 de 100: eso lo cierra el modelo de lenguaje.</span><span class="l-en">On 100 plant questions the graph gets all 100 and a flat RAG, at best, 16. With free wording it drops to 10 in 100: the language model closes that gap.</span></p>
+        <p class="card-problem"><span class="l-es">En 100 preguntas sobre la planta el grafo acierta las 100 y un RAG plano, en el mejor caso, 16. Con redacción libre baja a 10 de 100; cerrar esa brecha con un modelo de lenguaje está pendiente.</span><span class="l-en">On 100 plant questions the graph gets all 100 and a flat RAG, at best, 16. With free wording it drops to 10 in 100; closing that gap with a language model is pending.</span></p>
         <div class="card-stack"><span>Neo4j · networkx</span><span>ISO 14224</span><span>Pydantic</span></div>
         <div class="project-links"><a class="btn btn-teal" href="./projects/01-asistente-planta.html"><span class="l-es">Ver proyecto →</span><span class="l-en">View project →</span></a></div>
       </article><article class="project-card-v2">
@@ -803,12 +818,119 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
   <section class="panel" id="experiencia">
     <div class="eyebrow"><span class="l-es">05 · Experiencia</span><span class="l-en">05 · Experience</span></div>
     <h2 class="title"><span class="l-es">Trayectoria profesional</span><span class="l-en">Career</span></h2>
+    <p class="sub"><span class="l-es">Desde 2005, planeación y control de proyectos de petróleo y gas, construcción y comisionamiento; antes, producción, oficina técnica y diseño.</span><span class="l-en">Since 2005, planning and control of oil and gas, construction and commissioning projects; before that, production, technical office and design.</span></p>
     <div class="experience-list two">
-      <article class="experience-item pend-box">
-        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Cargo</span><span class="l-en">Role</span></h3><span class="exp-period"><span class="l-es">Año — Año</span><span class="l-en">Year — Year</span></span></div>
-        <div class="exp-meta"><span class="l-es">Empresa · Ciudad</span><span class="l-en">Company · City</span></div>
-        <p class="exp-summary"><span class="l-es">Pendiente · describa el rol en una o dos frases. Copie este bloque por cada cargo.</span><span class="l-en">Pending · describe the role in one or two sentences. Copy this block for each role.</span></p>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Planeación y control de proyecto</span><span class="l-en">Project planning and control</span></h3><span class="exp-period"><span class="l-es">Jul 2017 — Dic 2024 · 7 años 5 meses</span><span class="l-en">Jul 2017 — Dec 2024 · 7 yrs 5 mos</span></span></div>
+        <div class="exp-meta">Massy Energy · <span class="l-es">Contrato marco de servicio de comisionamiento para Ecopetrol S.A. y su grupo empresarial</span><span class="l-en">Commissioning services framework contract for Ecopetrol S.A. and its group</span></div>
+        <p class="exp-summary"><span class="l-es">Planeación, control presupuestal y facturación de 26 órdenes de servicio de comisionamiento, con tableros en Power BI e indicadores semanales para la gerencia.</span><span class="l-en">Planning, budget control and invoicing of 26 commissioning service orders, with Power BI dashboards and weekly KPIs for management.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Gestión de certificaciones AC1 y HC1 y control del precomisionamiento y comisionamiento de todas las disciplinas.</span><span class="l-en">Management of AC1 and HC1 certifications and control of pre-commissioning and commissioning across all disciplines.</span></li>
+          <li><span class="l-es">Control de preservación y gestión de materiales para todas las disciplinas, con trazabilidad y disponibilidad.</span><span class="l-en">Preservation control and materials management for all disciplines, with traceability and availability.</span></li>
+          <li><span class="l-es">Proyecciones de recursos por orden de servicio, revisión del control presupuestal y control de ventas mensuales.</span><span class="l-en">Resource projections per service order, budget-control review and monthly sales control.</span></li>
+          <li><span class="l-es">Revisión y cobro de pruebas FAT y de calidad: vibraciones, reciprocante, termografía, ultrasonido, calidad de energía, ADRE, torque y flujo.</span><span class="l-en">Review and billing of FAT and quality tests: vibration, reciprocating, thermography, ultrasound, power quality, ADRE, torque and flow.</span></li>
+          <li><span class="l-es">Actualización del schedule de todas las órdenes, planeación de su arranque y reuniones semanales con la gerencia de comisionamiento de Ecopetrol.</span><span class="l-en">Schedule updates for all orders, start-up planning and weekly meetings with Ecopetrol's commissioning management.</span></li>
+          <li><span class="l-es">Auditorías técnicas y entrevistas a planeadores; soporte en PDT, curvas, informes, bases de datos y BI.</span><span class="l-en">Technical audits and interviews of planners; support on detailed work plans, curves, reports, databases and BI.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
       </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Planeación y control de proyecto</span><span class="l-en">Project planning and control</span></h3><span class="exp-period"><span class="l-es">Oct 2016 — Ene 2017</span><span class="l-en">Oct 2016 — Jan 2017</span></span></div>
+        <div class="exp-meta">Massy Energy</div>
+        <p class="exp-summary"><span class="l-es">Programación y control de obra y paradas en Microsoft Project, conciliación de cantidades con contratistas e interventoría y control presupuestal.</span><span class="l-en">Scheduling and control of construction and shutdowns in Microsoft Project, quantity reconciliation with contractors and the owner's inspector, and budget control.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Seguimiento del avance físico por disciplinas y facturación por ítems de pago con soportes técnicos validados.</span><span class="l-en">Physical progress tracking by discipline and invoicing by pay item with validated technical support.</span></li>
+          <li><span class="l-es">Informes diarios y semanales de avance, riesgos, calidad y cantidades; revisión de memorias de cálculo interdisciplinarias.</span><span class="l-en">Daily and weekly reports on progress, risks, quality and quantities; review of interdisciplinary calculation reports.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Planeación y control de proyecto</span><span class="l-en">Project planning and control</span></h3><span class="exp-period"><span class="l-es">Ene 2015 — Sep 2016 · 1 año 8 meses</span><span class="l-en">Jan 2015 — Sep 2016 · 1 yr 8 mos</span></span></div>
+        <div class="exp-meta">OBS Oil Business Services Ltda.</div>
+        <p class="exp-summary"><span class="l-es">Control y facturación por ítems de pago, consolidación de cantidades de obra con la gestoría para todas las disciplinas y revisión de análisis de precios unitarios.</span><span class="l-en">Control and invoicing by pay item, consolidation of construction quantities with the project manager for all disciplines and review of unit price analyses.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Control de mayores y menores cantidades de obra y de su impacto en presupuesto y certificaciones.</span><span class="l-en">Control of quantity overruns and underruns and their impact on budget and certifications.</span></li>
+          <li><span class="l-es">Informes diarios, semanales y mensuales de avance, calidad, cantidades y cumplimiento técnico.</span><span class="l-en">Daily, weekly and monthly reports on progress, quality, quantities and technical compliance.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Líder de planeación y control</span><span class="l-en">Planning and control lead</span></h3><span class="exp-period"><span class="l-es">May 2013 — Ene 2015 · 1 año 7 meses</span><span class="l-en">May 2013 — Jan 2015 · 1 yr 7 mos</span></span></div>
+        <div class="exp-meta">Wood Group / Massy Energy · <span class="l-es">proyecto Araguaney</span><span class="l-en">Araguaney project</span></div>
+        <p class="exp-summary"><span class="l-es">Coordinación integral de la planeación y el control del proyecto, con planes detallados de trabajo P-90, P-50 y P-10, archivos C3 por especialidad y análisis de ruta crítica.</span><span class="l-en">End-to-end planning and control of the project, with P-90, P-50 and P-10 detailed work plans, C3 files per discipline and critical path analysis.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Supervisión del precomisionamiento y control del avance de certificación de sistemas y paquetes de trabajo.</span><span class="l-en">Pre-commissioning supervision and control of system and work-package certification progress.</span></li>
+          <li><span class="l-es">Paquetes de trabajo para paradas, control de trabajos simultáneos (SIMOPS) y planes de arranque con operaciones.</span><span class="l-en">Work packages for shutdowns, control of simultaneous operations (SIMOPS) and start-up plans with operations.</span></li>
+          <li><span class="l-es">Seguimiento de actividades en el modelo 3D, planes de vendor y supervisión de la preservación de equipos.</span><span class="l-en">Activity tracking on the 3D model, vendor plans and supervision of equipment preservation.</span></li>
+          <li><span class="l-es">Cierre de pendientes de construcción y secuencias de entrega con especialistas, integrando QA/QC y control documental.</span><span class="l-en">Close-out of construction punch items and handover sequences with specialists, integrating QA/QC and document control.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Planeación y control de proyecto</span><span class="l-en">Project planning and control</span></h3><span class="exp-period"><span class="l-es">Mar 2013 — Abr 2013</span><span class="l-en">Mar 2013 — Apr 2013</span></span></div>
+        <div class="exp-meta">Wood Group</div>
+        <p class="exp-summary"><span class="l-es">Planeación, programación y control técnico de paradas de planta, con disponibilidad de materiales, ventanas tácticas y liberación de equipos según QA/QC.</span><span class="l-en">Planning, scheduling and technical control of plant shutdowns, with material availability, tactical windows and equipment release per QA/QC.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Programación de obra en Microsoft Project y control presupuestal con análisis de desviaciones.</span><span class="l-en">Construction scheduling in Microsoft Project and budget control with variance analysis.</span></li>
+          <li><span class="l-es">Reuniones con interventoría, QA/QC y gerencia de comisionamiento sobre calidad, cantidades y listas de punch.</span><span class="l-en">Meetings with the owner's inspector, QA/QC and commissioning management on quality, quantities and punch lists.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role">Commissioning planner</h3><span class="exp-period"><span class="l-es">Ago 2010 — Dic 2012 · 2 años 5 meses</span><span class="l-en">Aug 2010 — Dec 2012 · 2 yrs 5 mos</span></span></div>
+        <div class="exp-meta">Wood Group · <span class="l-es">dos contratos; entre sus proyectos, el llenadero de LPG y las facilidades Floreña C6</span><span class="l-en">two contracts; projects include the LPG loading station and the Floreña C6 facilities</span></div>
+        <p class="exp-summary"><span class="l-es">Informes de avance, rendimientos y calidad por especialidad, archivos C3 de todas las disciplinas, cuadros de control con curvas S y planes detallados de trabajo con reprogramaciones.</span><span class="l-en">Progress, productivity and quality reports per discipline, C3 files for all disciplines, control sheets with S-curves and detailed work plans with re-planning.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Seguimiento técnico de trabajos civiles, eléctricos, de estructuras, tubería e instrumentación frente a planos y especificaciones.</span><span class="l-en">Technical follow-up of civil, electrical, structural, piping and instrumentation work against drawings and specifications.</span></li>
+          <li><span class="l-es">Control de planos red-line y as-built hasta la entrega final conforme a obra.</span><span class="l-en">Control of red-line and as-built drawings through final as-built handover.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Coordinador de programación y control</span><span class="l-en">Scheduling and control coordinator</span></h3><span class="exp-period"><span class="l-es">Nov 2007 — Jul 2010 · 2 años 8 meses</span><span class="l-en">Nov 2007 — Jul 2010 · 2 yrs 8 mos</span></span></div>
+        <div class="exp-meta">Consorcio ITS</div>
+        <p class="exp-summary"><span class="l-es">Control de horas hombre propias y de subcontratistas, archivos C3, cuadros de control con avance plan contra real y reprogramaciones por cambios de alcance, plazo y costo.</span><span class="l-en">Control of own and subcontractor man-hours, C3 files, plan-versus-actual control sheets and re-planning for scope, schedule and cost changes.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Informes diarios, semanales y mensuales con avance físico, rendimientos, calidad y estado contractual.</span><span class="l-en">Daily, weekly and monthly reports with physical progress, productivity, quality and contract status.</span></li>
+          <li><span class="l-es">Seguimiento de rendimientos reales contra planeados en todas las disciplinas.</span><span class="l-en">Tracking of actual versus planned productivity across all disciplines.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Planeación y control de proyecto</span><span class="l-en">Project planning and control</span></h3><span class="exp-period"><span class="l-es">Dic 2005 — Jul 2007 · 1 año 8 meses</span><span class="l-en">Dec 2005 — Jul 2007 · 1 yr 8 mos</span></span></div>
+        <div class="exp-meta">Electro Hidráulica S.A.</div>
+        <p class="exp-summary"><span class="l-es">Programación general en Microsoft Project, presupuesto con flujo de caja y proyecciones, compras y coordinación de cuadrillas multidisciplinarias y contratistas.</span><span class="l-en">Overall scheduling in Microsoft Project, budget with cash flow and projections, purchasing and coordination of multidisciplinary crews and contractors.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Balance financiero y de avance en pesos y dólares, alineado con indicadores de costo, tiempo y materiales.</span><span class="l-en">Financial and progress balance in pesos and dollars, aligned with cost, time and materials KPIs.</span></li>
+          <li><span class="l-es">Facturación, cantidades de obra, planos as-built, punch list y protocolos hasta la liberación de sistemas.</span><span class="l-en">Invoicing, construction quantities, as-built drawings, punch lists and protocols through system release.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+
+      <article class="experience-item">
+        <div class="exp-head"><h3 class="exp-role"><span class="l-es">Trayectoria anterior</span><span class="l-en">Earlier career</span></h3><span class="exp-period">1990 — 2005</span></div>
+        <div class="exp-meta"><span class="l-es">Producción, oficina técnica, planeación de paradas y diseño</span><span class="l-en">Production, technical office, shutdown planning and design</span></div>
+        <p class="exp-summary"><span class="l-es">Jefe de oficina técnica en Construcciones y Montajes Distral, jefe y supervisor de producción en Industrias I.M.A., planeador de paradas en Colomserv y auxiliar de ingeniería en proyectos de Alpina y Congelagro.</span><span class="l-en">Technical office head at Construcciones y Montajes Distral, production head and supervisor at Industrias I.M.A., shutdown planner at Colomserv and engineering assistant on Alpina and Congelagro projects.</span></p>
+        <div class="more"><ul class="exp-bullets">
+          <li><span class="l-es">Colomserv Ltda. (2002) · planeador: programación general de la parada, punch list, certificaciones y control de materiales.</span><span class="l-en">Colomserv Ltda. (2002) · planner: overall shutdown scheduling, punch list, certifications and materials control.</span></li>
+          <li><span class="l-es">Construcciones y Montajes Distral S.A. (1996–1998) · jefe de oficina técnica: planes de ejecución, rendimientos de montaje, horas hombre, prefabricación y maniobras en CAD 3D.</span><span class="l-en">Construcciones y Montajes Distral S.A. (1996–1998) · technical office head: execution plans, erection productivity, man-hours, prefabrication and rigging studies in 3D CAD.</span></li>
+          <li><span class="l-es">Industrias I.M.A. S.A. (1991–1994 y 1999–2002) · supervisor y jefe de producción: programación, personal, calidad, máquinas y materiales.</span><span class="l-en">Industrias I.M.A. S.A. (1991–1994 and 1999–2002) · production supervisor and head: scheduling, staff, quality, machines and materials.</span></li>
+          <li><span class="l-es">Challenger Inelso (1994–1996), GEOS Consultores, Hilanderías Fontibón, Pedro Alarcón y Cía. y Servicad: procesos, oficina técnica, despachos, digitalización de planos y topografía.</span><span class="l-en">Challenger Inelso (1994–1996), GEOS Consultores, Hilanderías Fontibón, Pedro Alarcón y Cía. and Servicad: processes, technical office, dispatch, drawing digitization and surveying.</span></li>
+        </ul></div><button class="more-btn" type="button"></button>
+      </article>
+    </div>
+    <div class="dtitle-i"><span class="l-es">Proyectos en los que he participado</span><span class="l-en">Projects I have worked on</span></div>
+    <div class="stack-tags proj-tags">
+      <span><span class="l-es">Contrato marco de comisionamiento · Ecopetrol</span><span class="l-en">Commissioning framework contract · Ecopetrol</span></span>
+      <span><span class="l-es">Almacenamiento y bombeo, estación San Fernando · Cenit</span><span class="l-en">Storage and pumping, San Fernando station · Cenit</span></span>
+      <span><span class="l-es">Tea y venteo, complejo Ballenas y plataformas Chuchupa A y B (offshore)</span><span class="l-en">Flare and vent, Ballenas complex and Chuchupa A and B platforms (offshore)</span></span>
+      <span><span class="l-es">Planta de recuperación de LPG, CPF Cusiana</span><span class="l-en">LPG recovery plant, CPF Cusiana</span></span>
+      <span><span class="l-es">Piedemonte fase VI, expansión EPF Floreña</span><span class="l-en">Piedemonte phase VI, EPF Floreña expansion</span></span>
+      <span><span class="l-es">Planta de gas ventas LTO-II, CPF Cusiana</span><span class="l-en">LTO-II sales gas plant, CPF Cusiana</span></span>
+      <span><span class="l-es">Inyección Pauto Sur C2 · overhaul de dos compresores de tres etapas</span><span class="l-en">Pauto Sur C2 injection · overhaul of two three-stage compressors</span></span>
+      <span><span class="l-es">Hidrotratamiento de combustibles, Complejo Barrancabermeja (HDT-GCB)</span><span class="l-en">Fuel hydrotreating, Barrancabermeja Complex (HDT-GCB)</span></span>
+      <span><span class="l-es">Estación de bombeo Yopal «Recetor»</span><span class="l-en">Yopal "Recetor" pumping station</span></span>
+      <span><span class="l-es">Oleoducto Colombia, estación de bombeo Caucasia</span><span class="l-en">Oleoducto Colombia, Caucasia pumping station</span></span>
     </div>
   </section>
 
@@ -816,19 +938,45 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
     <div class="eyebrow"><span class="l-es">06 · Formación</span><span class="l-en">06 · Education</span></div>
     <h2 class="title"><span class="l-es">Formación</span><span class="l-en">Education</span></h2>
     <div class="edu-wrap">
-      <article class="uni pend-box">
-        <div class="edu-block-title"><span class="l-es">Formación universitaria</span><span class="l-en">University education</span></div>
-        <h3 class="uni-deg"><span class="l-es">Título</span><span class="l-en">Degree</span></h3>
-        <div class="uni-school"><span class="l-es">Pendiente · institución, ciudad y año</span><span class="l-en">Pending · institution, city and year</span></div>
-      </article>
+      <div class="uni-col">
+        <article class="uni">
+          <div class="edu-block-title"><span class="l-es">Título obtenido</span><span class="l-en">Degree</span></div>
+          <h3 class="uni-deg"><span class="l-es">Tecnólogo en Ingeniería Industrial</span><span class="l-en">Industrial Engineering Technologist</span></h3>
+          <div class="uni-school">Tecnológico Inespro · 1995</div>
+        </article>
+        <article class="uni">
+          <div class="edu-block-title"><span class="l-es">Universidad</span><span class="l-en">University</span></div>
+          <h3 class="uni-deg uni-deg-s"><span class="l-es">Estudios de Ingeniería de Sistemas</span><span class="l-en">Systems Engineering studies</span></h3>
+          <div class="uni-school">Universidad Nacional Abierta y a Distancia · UNAD</div>
+        </article>
+      </div>
+      <div class="certs">
+        <div class="edu-block-title"><span class="l-es">Certificaciones y cursos</span><span class="l-en">Certifications and courses</span> <small>· 14</small></div>
+        <div class="cert-grid">
+          <article class="cert"><span class="cert-prov"><span class="l-es">Certificado</span><span class="l-en">Certified</span></span><h5>AWP · Advanced Work Packaging</h5></article>
+          <article class="cert"><span class="cert-prov"><span class="l-es">Certificado</span><span class="l-en">Certified</span></span><h5>Intergraph Smart® Completions</h5></article>
+          <article class="cert"><span class="cert-prov"><span class="l-es">Certificado</span><span class="l-en">Certified</span></span><h5>Intergraph Smart® Materials</h5></article>
+          <article class="cert"><span class="cert-prov">Primavera P6</span><h5><span class="l-es">Gestión de proyectos con Primavera P6 Professional Project Management R8.2</span><span class="l-en">Project management with Primavera P6 Professional Project Management R8.2</span></h5></article>
+          <article class="cert"><span class="cert-prov">Primavera P6</span><h5><span class="l-es">Curso taller avanzado Primavera Project Planner 6.0 · Barrancabermeja, 2010</span><span class="l-en">Advanced workshop, Primavera Project Planner 6.0 · Barrancabermeja, 2010</span></h5></article>
+          <article class="cert"><span class="cert-prov">Microsoft Project</span><h5><span class="l-es">Aplicación en la programación de obra</span><span class="l-en">Application to construction scheduling</span></h5></article>
+          <article class="cert"><span class="cert-prov"><span class="l-es">Gerencia</span><span class="l-en">Management</span></span><h5><span class="l-es">Planeación y organización del trabajo a nivel gerencial</span><span class="l-en">Work planning and organization at management level</span></h5></article>
+          <article class="cert"><span class="cert-prov">SENA</span><h5><span class="l-es">Control de producción</span><span class="l-en">Production control</span></h5></article>
+          <article class="cert"><span class="cert-prov">SENA</span><h5><span class="l-es">Calidad total</span><span class="l-en">Total quality</span></h5></article>
+          <article class="cert"><span class="cert-prov">Ocensa</span><h5><span class="l-es">Seminario de seguridad industrial</span><span class="l-en">Industrial safety seminar</span></h5></article>
+          <article class="cert"><span class="cert-prov"><span class="l-es">Inst. Central de Sistemas</span><span class="l-en">Inst. Central de Sistemas</span></span><h5><span class="l-es">Programación avanzada</span><span class="l-en">Advanced programming</span></h5></article>
+          <article class="cert"><span class="cert-prov">Compuclub</span><h5>AutoCAD · AutoLisp</h5></article>
+          <article class="cert"><span class="cert-prov">Industrias I.M.A.</span><h5><span class="l-es">Seminario de relaciones humanas</span><span class="l-en">Human relations seminar</span></h5></article>
+          <article class="cert"><span class="cert-prov"><span class="l-es">Soporte técnico</span><span class="l-en">Technical support</span></span><h5><span class="l-es">Ensamble y mantenimiento de computadores</span><span class="l-en">Computer assembly and maintenance</span></h5></article>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="panel" id="contact">
     <div class="contact">
       <div>
-        <h2><span class="l-es">¿Hablamos de planeación, confiabilidad o datos de planta?</span><span class="l-en">Shall we talk about planning, reliability or plant data?</span></h2>
-        <p><span class="l-es">Escríbame para conversar sobre su planta, su proyecto o su equipo.</span><span class="l-en">Write to me to talk about your plant, your project or your team.</span></p>
+        <h2><span class="l-es">¿Hablamos de planeación, control de proyectos o comisionamiento?</span><span class="l-en">Shall we talk about planning, project control or commissioning?</span></h2>
+        <p><span class="l-es">Escríbame para conversar sobre su proyecto, su parada de planta o su equipo de trabajo.</span><span class="l-en">Write to me to talk about your project, your plant shutdown or your team.</span></p>
       </div>
       <div class="contact-cta">
         <a class="btn" href="https://github.com/Edgar-Suarez-creator" target="_blank" rel="noopener">
@@ -842,7 +990,7 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
   </section>
 
   <footer>
-    <div>© <span id="year"></span> Edgar Suárez</div>
+    <div>© <span id="year"></span> Edgar R. Suárez Macías</div>
     <div class="footer-meta"><span><span class="l-es">Actualizado</span><span class="l-en">Updated</span> <span id="updated"></span></span></div>
   </footer>
 </main>
@@ -878,6 +1026,10 @@ html[lang="en"] .l-es{display:none !important} html[lang="es"] .l-en{display:non
     document.querySelectorAll('.panel, ' + ITEM_SEL).forEach(el => { el.classList.add('in'); el.style.animationPlayState = 'running'; });
   }
   document.querySelectorAll('.conviction.clamp').forEach(c => c.addEventListener('click', () => c.classList.toggle('open')));
+  // experiencia: ver más / ver menos, con la etiqueta en los dos idiomas
+  const etiqueta = b => { const open = b.parentElement.classList.contains('open');
+    b.innerHTML = open ? '<span class="l-es">Ver menos ↑</span><span class="l-en">See less ↑</span>' : '<span class="l-es">Ver más ↓</span><span class="l-en">See more ↓</span>'; };
+  document.querySelectorAll('.more-btn').forEach(b => { etiqueta(b); b.addEventListener('click', () => { b.parentElement.classList.toggle('open'); etiqueta(b); }); });
   // tilt 3D suave en tarjetas de proyecto
   document.querySelectorAll('.project-card-v2').forEach(c => {
     c.addEventListener('pointermove', ev => { const r = c.getBoundingClientRect(); const x = (ev.clientX - r.left)/r.width - .5, y = (ev.clientY - r.top)/r.height - .5; c.classList.add('tilt'); c.style.transform = `translateY(-3px) rotateX(${(-y*5).toFixed(2)}deg) rotateY(${(x*6).toFixed(2)}deg)`; });
